@@ -1134,8 +1134,8 @@ pre .javascript .function {
     padding-right: 10px;
   }
   .post-body .highlight {
-    margin-left: -40px;
-    margin-right: -40px;
+    margin-left: -20px;
+    margin-right: -20px;
     padding: 0;
   }
   .post-body .highlight .gutter pre {
