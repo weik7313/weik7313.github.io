@@ -87,17 +87,17 @@
 
 
 
-<meta name="description" content="定义1234var emptyArray = []    concat = emptyArray.concat    filter = emptyArray.filter    slice = emptyArray.slice compact (删除 和 ```undefined```)123456```javascriptfunction compact(array) &amp;#123;  retur">
+<meta name="description" content="定义1234var emptyArray = []    concat = emptyArray.concat    filter = emptyArray.filter    slice = emptyArray.slice compact (删除 null 和 undefined)12345function compact(array) &amp;#123;  return filter.call(a">
 <meta name="keywords" content="Array,JavaScript,数组方法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="一些数组方法">
 <meta property="og:url" content="http://yoursite.com/2017/04/12/array-zepto/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="定义1234var emptyArray = []    concat = emptyArray.concat    filter = emptyArray.filter    slice = emptyArray.slice compact (删除 和 ```undefined```)123456```javascriptfunction compact(array) &amp;#123;  retur">
-<meta property="og:updated_time" content="2017-04-12T09:38:55.000Z">
+<meta property="og:site_name" content="记东西的地方">
+<meta property="og:description" content="定义1234var emptyArray = []    concat = emptyArray.concat    filter = emptyArray.filter    slice = emptyArray.slice compact (删除 null 和 undefined)12345function compact(array) &amp;#123;  return filter.call(a">
+<meta property="og:updated_time" content="2017-04-12T09:47:02.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一些数组方法">
-<meta name="twitter:description" content="定义1234var emptyArray = []    concat = emptyArray.concat    filter = emptyArray.filter    slice = emptyArray.slice compact (删除 和 ```undefined```)123456```javascriptfunction compact(array) &amp;#123;  retur">
+<meta name="twitter:description" content="定义1234var emptyArray = []    concat = emptyArray.concat    filter = emptyArray.filter    slice = emptyArray.slice compact (删除 null 和 undefined)12345function compact(array) &amp;#123;  return filter.call(a">
 
 
 
@@ -131,7 +131,7 @@
 
 
 
-  <title> 一些数组方法 | Hexo </title>
+  <title> 一些数组方法 | 记东西的地方 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -167,7 +167,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">记东西的地方</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -259,7 +259,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="记东西的地方">
     </span>
 
     
@@ -323,9 +323,10 @@
 
       
         <h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> emptyArray = []</div><div class="line">    concat = emptyArray.concat</div><div class="line">    filter = emptyArray.filter</div><div class="line">    slice = emptyArray.slice</div></pre></td></tr></table></figure>
-<h3 id="compact-删除"><a href="#compact-删除" class="headerlink" title="compact (删除 "></a>compact (删除 <figure class="highlight plain"><figcaption><span>和 ```undefined```)</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">```javascript</div><div class="line">function compact(array) &#123;</div><div class="line">  return filter.call(array, function(item) &#123;</div><div class="line">    return item != null</div><div class="line">  &#125;)</div><div class="line">&#125;</div></pre></td></tr></table></figure></h3><h3 id="flatten-数组扁平化"><a href="#flatten-数组扁平化" class="headerlink" title="flatten (数组扁平化)"></a>flatten (数组扁平化)</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">flatten</span>(<span class="params">array</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> array.length &gt; <span class="number">0</span> ? $.fn.concat.apply([], array) : array</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="compact-删除-null-和-undefined"><a href="#compact-删除-null-和-undefined" class="headerlink" title="compact (删除 null 和 undefined)"></a>compact (删除 <code>null</code> 和 <code>undefined</code>)</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">compact</span>(<span class="params">array</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> filter.call(array, <span class="function"><span class="keyword">function</span>(<span class="params">item</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> item != <span class="literal">null</span></div><div class="line">  &#125;)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="flatten-数组扁平化"><a href="#flatten-数组扁平化" class="headerlink" title="flatten (数组扁平化)"></a>flatten (数组扁平化)</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">flatten</span>(<span class="params">array</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> array.length &gt; <span class="number">0</span> ? $.fn.concat.apply([], array) : array</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="uniq-去重"><a href="#uniq-去重" class="headerlink" title="uniq (去重)"></a>uniq (去重)</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">uniq = <span class="function"><span class="keyword">function</span>(<span class="params">array</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> filter.call(array, <span class="function"><span class="keyword">function</span>(<span class="params">item, idx</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> array.indexOf(item) == idx</div><div class="line">  &#125;)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>以上方法均来自<code>Zepto.js</code></p>
+<p>以上方法均来自 <code>Zepto.js</code></p>
 
       
     </div>
@@ -496,7 +497,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#compact-删除"><span class="nav-number">2.</span> <span class="nav-text">compact (删除 和 ```undefined```)123456```javascriptfunction compact(array) {  return filter.call(array, function(item) {    return item != null  })}</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#flatten-数组扁平化"><span class="nav-number">3.</span> <span class="nav-text">flatten (数组扁平化)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#uniq-去重"><span class="nav-number">4.</span> <span class="nav-text">uniq (去重)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#compact-删除-null-和-undefined"><span class="nav-number">2.</span> <span class="nav-text">compact (删除 null 和 undefined)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#flatten-数组扁平化"><span class="nav-number">3.</span> <span class="nav-text">flatten (数组扁平化)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#uniq-去重"><span class="nav-number">4.</span> <span class="nav-text">uniq (去重)</span></a></li></ol></div>
             
 
           </div>
