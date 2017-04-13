@@ -1134,7 +1134,7 @@ pre .javascript .function {
     padding-right: 10px;
   }
   .post-body .highlight {
-    margin-left: -30px;
+    margin-left: -10px;
     margin-right: -10px;
     padding: 0;
   }
@@ -1701,7 +1701,7 @@ pad
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d7e05c;
+  background: #374dff;
 }
 .links-of-blogroll {
   font-size: 13px;
