@@ -1140,6 +1140,7 @@ pre .javascript .function {
   }
   .post-body .highlight .gutter pre {
     padding-right: 10px;
+pad
   }
   .post-body .highlight table {
     width: 100%;
@@ -1700,7 +1701,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #cf83cc;
+  background: #fff;
 }
 .links-of-blogroll {
   font-size: 13px;
