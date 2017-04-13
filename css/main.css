@@ -548,6 +548,7 @@ pre code {
   padding-left: 10px;
   padding-right: 10px;
   background-color: #f7f7f7;
+  box-sizing: border-box;
 }
 .highlight .line {
   height: 20px;
@@ -1140,7 +1141,6 @@ pre .javascript .function {
   }
   .post-body .highlight .gutter pre {
     padding-right: 10px;
-pad
   }
   .post-body .highlight table {
     width: 100%;
@@ -1701,7 +1701,7 @@ pad
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #374dff;
+  background: #4fad8e;
 }
 .links-of-blogroll {
   font-size: 13px;
