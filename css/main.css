@@ -1134,8 +1134,8 @@ pre .javascript .function {
     padding-right: 10px;
   }
   .post-body .highlight {
-    margin-left: -40px;
-    margin-right: -40px;
+    margin-left: -20px;
+    margin-right: -20px;
     padding: 0;
   }
   .post-body .highlight .gutter pre {
@@ -1691,7 +1691,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d7b070;
+  background: #ff7d8b;
 }
 .links-of-blogroll {
   font-size: 13px;
