@@ -1142,15 +1142,6 @@ pre .javascript .function {
   .post-body .highlight .gutter pre {
     padding-right: 10px;
   }
-  .post-body .highlight table {
-    width: 100%;
-  }
-  .post-body .highlight table td.gutter {
-    width: 28px;
-  }
-  .post-body .highlight table td.code {
-    overflow-x: scroll;
-  }
 }
 @media (min-width: 992px) {
   .posts-expand .post-body {
@@ -1701,7 +1692,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #6a7a44;
+  background: #99ff70;
 }
 .links-of-blogroll {
   font-size: 13px;
